@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="logo"><img src="./images/banner.png"></a>
+        <div class="navmenu">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://myanimelist.net/anime/38816/Hello_World">More Info</a></li>
+                <li><a href="https://hello-world-movie.com/index.html">Official Site</a></li>
+            </ul>
+        </div>
+        <div class="togglebtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-one">
+            <div class="content-one-body">
+                <image src="./images/img1.png" class="imagee"></image>
+            </div>
+        </div>
+        <div class="content-two">
+            <h1>Hello World</h1>
+            <h3>2019 | Anime</h3>
+            <p>A high school student named Katagaki Naomi, meets a man who claims to be Naomi from 10 years in the future. The man came back to the past to change the future and save their first love.</p>
+            <div>
+                <button  class="cont-btn"><a href="https://www.youtube.com/watch?v=shoWFRnNoWw" class="btn">Watch Trailer</a></button>
+                <button  class="cont-btn"><a href="#" class="btn">Watch Movie Now</a></button>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        togglebtn = document.querySelector(".togglebtn");
+        togglebtn.onclick = function() {
+        navMenu = document.querySelector(".nav-links");
+        navMenu.classList.toggle("active");
+        togglebtn.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
